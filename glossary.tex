@@ -1,0 +1,427 @@
+% !TEX root = main.tex
+% acronyms
+\newglossaryentry{usb}{
+  type=\acronymtype,
+  name={USB},
+  description={Universal Serial Bus}
+}
+\newglossaryentry{os}{
+  type=\acronymtype,
+  name={OS},
+  description={operating system}
+}
+\newglossaryentry{cpu}{
+  type=\acronymtype,
+  name={CPU},
+  description={central processing unit}
+}
+\newglossaryentry{raspi}{
+  type=\acronymtype,
+  name={RasPi},
+  first={Raspberry Pi (RasPi)},
+  description={\gls{raspberrypi}}
+}
+\newglossaryentry{CD}{
+  type=\acronymtype,
+  name={CD},
+  description={compact disc}
+}
+\newglossaryentry{vm}{
+  type=\acronymtype,
+  name={VM},
+  plural={VMs},
+  first={virtual machine (VM)},
+  firstplural={virtual machines (VMs)},
+  description={virtual machine}
+}
+\newglossaryentry{eg}{
+  type=\acronymtype,
+  name={e.g.},
+  description={example given}
+}
+\newglossaryentry{bash}{
+  type=\acronymtype,
+  name={Bash},
+  description={Bourne-again shell}
+}
+\newglossaryentry{url}{
+  type=\acronymtype,
+  name={URL},
+  description={uniform resource locator}
+}
+\newglossaryentry{aur}{
+  type=\acronymtype,
+  name={AUR},
+  first={\gls{arch} User Repository (AUR)},
+  description={\gls{arch} User Repository}
+}
+\newglossaryentry{rc}{
+  type=\acronymtype,
+  name={RC},
+  first={Release Candidate (RC)},
+  description={\gls{relcan}}
+}
+\newglossaryentry{gb}{
+  type=\acronymtype,
+  name={GB},
+  description={Gigabyte}
+}
+\newglossaryentry{gib}{
+  type=\acronymtype,
+  name={GiB},
+  description={Gibibyte}
+}
+\newglossaryentry{gui}{
+  type=\acronymtype,
+  name={GUI},
+  description={graphical user interface}
+}
+\newglossaryentry{ssh}{
+  type=\acronymtype,
+  name={SSH},
+  description={secure shell}
+}
+\newglossaryentry{cto}{
+  type=\acronymtype,
+  name={CTO},
+  description={chief technical officer}
+}
+\newglossaryentry{wep}{
+  type=\acronymtype,
+  name={WEP},
+  first={WEP (Wired Equivalent Privacy)},
+  description={Wired Equivalent Privacy}
+}
+\newglossaryentry{wpa}{
+  type=\acronymtype,
+  name={WPA},
+  first={WiFi Protected Access (WPA)},
+  description={WiFi Protected Access}
+}
+\newglossaryentry{wpa2}{
+  type=\acronymtype,
+  name={WPA2},
+  first={WiFi Protected Access 2 (WPA2)},
+  description={WiFi Protected Access 2}
+}
+\newglossaryentry{iv}{
+  type=\acronymtype,
+  name={IV},
+  first={Initialization Vector (IV)},
+  description={Initialization Vector}
+}
+\newglossaryentry{icv}{
+  type=\acronymtype,
+  name={ICV},
+  first={Integrity Check Value (ICV)},
+  description={Integrity Check Value}
+}
+\newglossaryentry{rc4}{
+  type=\acronymtype,
+  name={RC4},
+  description={Rivest Cipher 4}
+}
+\newglossaryentry{crc}{
+  type=\acronymtype,
+  name={CRC},
+  first={Cyclic Redundancy Check (CRC)},
+  description={Cyclic Redundancy Check}
+}
+\newglossaryentry{crc32}{
+  type=\acronymtype,
+  name={CRC32},
+  description={\gls{crc} with a resulting 32 bit hash value}
+}
+\newglossaryentry{ksa}{
+  type=\acronymtype,
+  name={KSA},
+  first={Key Scheduling Algorithm (KSA)},
+  description={Key Scheduling Algorithm}
+}
+\newglossaryentry{prga}{
+  type=\acronymtype,
+  name={PRGA},
+  first={Pseudo Random Generation Algorithm (PRGA)},
+  plural={PRGAs},
+  description={Pseudo Random Generation Algorithm}
+}
+\newglossaryentry{ap}{
+  type=\acronymtype,
+  name={AP},
+  plural={APs},
+  first={access point (AP)},
+  description={access point}
+}
+\newglossaryentry{psk}{
+  type=\acronymtype,
+  name={PSK},
+  first={pre shared key (PSK)},
+  description={pre shared key}
+}
+\newglossaryentry{eap}{
+  type=\acronymtype,
+  name={EAP},
+  first={Extensible Authentication Protocol (EAP)},
+  description={Extensible Authentication Protocol}
+}
+\newglossaryentry{tkip}{
+  type=\acronymtype,
+  name={TKIP},
+  first={Temporal Key Integrity Protocol (TKIP)},
+  description={Temporal Key Integrity Protocol}
+}
+\newglossaryentry{ccmp}{
+  type=\acronymtype,
+  name={CCMP},
+  %first={Counter-Mode \gls{cbc}-\gls{mac} Protocol (CCMP)},
+  description={counter-mode cipher block chaining message protocol}
+}
+\newglossaryentry{cbc}{
+  type=\acronymtype,
+  name={CBC},
+  first={Cipher Block Chaining (CBC)},
+  description={Cipher Block Chaining}
+}
+\newglossaryentry{aes}{
+  type=\acronymtype,
+  name={AES},
+  first={Advanced Encryption Standard (AES)},
+  description={Advanced Encryption Standard}
+}
+\newglossaryentry{radius}{
+  type=\acronymtype,
+  name={RADIUS},
+  first={Remote Authentication Dial-In User Service (RADIUS)},
+  description={Remote Authentication Dial-In User Service}
+}
+\newglossaryentry{hmac}{
+  type=\acronymtype,
+  name={HMAC},
+  first={hash-based message authentication (HMAC)},
+  description={hash-based message authentication}
+}
+\newglossaryentry{ssid}{
+  type=\acronymtype,
+  name={SSID},
+  plural={SSIDs},
+  first={service set identifier (SSID)},
+  description={Service Set Identifier}
+}
+\newglossaryentry{wps}{
+  type=\acronymtype,
+  name={WPS},
+  first={WiFi Protected Setup (WPS)},
+  description={WiFi Protected Setup}
+}
+\newglossaryentry{gcc}{
+  type=\acronymtype,
+  name={GCC},
+  first={GNU Compiler Collection (GCC)},
+  description={GNU Compiler Collection -- a compiler suite (originally known as GNU C Compiler and back then only used for compiling C) for many different languages like C(++), ObjectiveC, Java and more}
+}
+\newglossaryentry{macad}{
+  type=\acronymtype,
+  name={MAC},
+  first={Media Access Control (MAC)},
+  description={Media Access Control -- a unique identifier assigned to network interfaces for communications on the physical network segment}
+}
+\newglossaryentry{mac}{
+  type=\acronymtype,
+  name={MAC},
+  first={Message Authentication Code (MAC)},
+  description={Message Authentication Code}
+}
+\newglossaryentry{mic}{
+  type=\acronymtype,
+  name={MIC},
+  first={Message Integrity Check (MIC)},
+  description={Message Integrity Check}
+}
+\newglossaryentry{osi}{
+  type=\acronymtype,
+  name={OSI},
+  first={Open Systems Interconnection (OSI)},
+  description={Open Systems Interconnection}
+}
+\newglossaryentry{nfc}{
+  type=\acronymtype,
+  name={NFC},
+  first={Near Field Communication (NFC)},
+  description={Near Field Communication}
+}
+\newglossaryentry{pin}{
+  type=\acronymtype,
+  name={PIN},
+  first={PIN},
+  plural={PINs},
+  description={Personal Identification Number}
+}
+\newglossaryentry{ghz}{
+  type=\acronymtype,
+  name={GHz},
+  description={Gigahertz}
+}
+\newglossaryentry{pbkdf2}{
+  type=\acronymtype,
+  name={PBKDF2},
+  first={Password-Based Key Derivation Function 2 (PBKDF2)},
+  description={Password-Based Key Derivation Function 2}
+}
+\newglossaryentry{pmk}{
+  type=\acronymtype,
+  name={PMK},
+  first={Preshared Master Key (PMK)},
+  description={Preshared Master Key}
+}
+
+% glossary -------------------------------------------
+\newglossaryentry{kernel}{
+  name={Kernel},
+  description={q computer program that manages input/output requests from software, and translates them into data processing instructions for the \gls{cpu} and other electronic components of a computer. The kernel is a fundamental part of a modern computer's \gls{os} \cite{05}}
+}
+\newglossaryentry{arm}{
+  name={ARM},
+  description={the ARM-architecture is a design for microprocessors developed 1983 by the company Acorn and maintained by ARM Ltd. since 1990}
+}
+\newglossaryentry{linux}{
+  name={Linux},
+  description={a \gls{unix}-like and mostly POSIX-compliant computer \gls{os} assembled under the model of free and open-source software development and distribution. The defining component of Linux is the Linux \gls{kernel}}
+}
+\newglossaryentry{kali}{
+  name={Kali \gls{linux}},
+  description={a \gls{debian}-derived \gls{linux} distribution designed for digital forensics and penetration testing. It is maintained and funded by Offensive Security Ltd\footnote{About Kali Linux -- \url{https://www.kali.org/about-us/}}}
+}
+\newglossaryentry{debian}{
+  name={Debian},
+  description={a \gls{unix}-like computer \gls{os} and a \gls{linux} distribution that is composed entirely of free and open-source software.\footnote{Debian -- The Universal Operation System -- \url{https://www.debian.org/index.en.html}} The whole project was founded by \gls{murdock}}
+}
+\newglossaryentry{raspberrypi}{
+  name={Raspberry Pi},
+  description={a series of credit card–sized single-board computers by the Raspberry Pi Foundation with the intention of promoting the teaching of basic computer science in schools and developing countries\footnote{Raspberry Pi FAQs -- \url{https://www.raspberrypi.org/help/faqs}}}
+}
+\newglossaryentry{deboot}{
+  name={\texttt{debootstrap}},
+  description={a tool which allows to install a \gls{debian} base system into a directory of another, already installed system or to create bootable disk images. It doesn't require an installation \gls{cd}, just access to a \gls{debian} repository\footnote{Debootstrap - Debian Wiki -- \url{https://wiki.debian.org/Debootstrap}}}
+}
+\newglossaryentry{torvalds}{
+  name={Linus Torvalds},
+  description={creator and long time principal developer of the \gls{linux} \gls{kernel}, creator of \gls{git}}
+}
+\newglossaryentry{murdock}{
+  name={Ian Murdock},
+  description={founder of the \gls{debian}-project and \gls{cto} of the Linux Foundation}
+}
+\newglossaryentry{atowns}{
+  name={Anthony Towns},
+  description={author of debootstrap}
+}
+\newglossaryentry{thinclient}{
+  name={thin-client},
+  plural={thin-clients},
+  description={a computer or a program that depends heavily on another computer (its server) to fulfill its computational roles}
+}
+\newglossaryentry{git}{
+  name={Git},
+  description={distributed revision control system, created by \gls{torvalds}}
+}
+\newglossaryentry{unix}{
+  name={Unix},
+  description={a family of multitasking, multiuser computer \gls{os}}
+}
+\newglossaryentry{chroot}{
+  name={\texttt{chroot}},
+  description={an operation that changes the apparent root directory for the current running process and their children. A program that is run in such a modified environment cannot access files and commands outside that environmental directory tree\footnote{Change root - ArchWiki -- \url{https://wiki.archlinux.org/index.php/Change_root}}}
+}
+\newglossaryentry{tarball}{
+  name={tarball},
+  description={the name that describes a group or archive of files that are bundled together usually having the \texttt{.tar} file extension}
+}
+\newglossaryentry{apt}{
+  name={\texttt{apt(--get)} / \texttt{aptitude}},
+  description={a set of core tools inside \gls{debian} for un-/installing and updating applications}
+}
+\newglossaryentry{dpkg}{
+  name={\texttt{dpkg}},
+  description={the software at the base of the package management system in \gls{debian}\footnote{dpkg - Linux man page -- \url{http://linux.die.net/man/1/dpkg}}}
+}
+\newglossaryentry{grml}{
+  name={grml},
+  description={a bootable live system based on \gls{debian}. It includes a collection of GNU/\gls{linux} software especially for system administrators and is especially well suited for administrative tasks like installation, deployment and system rescue\footnote{grml.org - Debian Live system / CD for sysadmins and texttool-users -- \url{https://grml.org/}}}
+}
+\newglossaryentry{knoppix}{
+  name={KNOPPIX},
+  description={an \gls{os} based on \gls{debian} designed to be run directly from a live \gls{cd}or a USB flash drive, one of the first of its kind for any \gls{os}. It was developed by, and named after, \gls{linux} consultant Klaus Knopper, a german electrical engineer and free software developer}
+}
+\newglossaryentry{ubuntu}{
+  name={Ubuntu},
+  description={a \gls{debian} based \gls{linux} \gls{os} and distribution, with Unity as its default desktop environment for personal computers, including smartphones in later versions, and servers\footnote{About Ubuntu -- \url{http://www.ubuntu.com/about/about-ubuntu}}}
+}
+\newglossaryentry{arch}{
+  name={Arch \gls{linux}},
+  description={an independently developed, i686/x86-64 general purpose GNU/\gls{linux} distribution versatile enough to suit any role. Development focuses on simplicity, minimalism, and code elegance\footnote{Arch Linux - ArchWiki -- \url{https://wiki.archlinux.org/index.php/Arch_Linux}}}
+}
+\newglossaryentry{mkdir}{
+  name={\texttt{mkdir}},
+  description={a command for \gls{unix}-based \gls{os}s to create a directory\footnote{mkdir - Linux man page -- \url{http://linux.die.net/man/1/mkdir}}}
+}
+\newglossaryentry{cd}{
+  name={\texttt{cd}},
+  description={a command for \gls{unix}-based \gls{os}s to change the current working directory\footnote{cd - Linux man page -- \url{http://linux.die.net/man/1/cd}}}
+}
+\newglossaryentry{dd}{
+  name={\texttt{dd}},
+  description={a tool for \gls{unix}-based \gls{os}s for copying and converting files. It's sometimes referred to as ``disk / data destroyer'' due to the tools capabilities like being able to directly write to a disk regardless of \gls{eg} any present filesystem.\footnote{dd - Linux man page -- \url{http://linux.die.net/man/1/dd}}}
+}
+\newglossaryentry{relcan}{
+  name={release candidate},
+  description={version of a program that is nearly ready for release but may still have a few bugs; the status between beta version and release version \cite{22}}
+}
+\newglossaryentry{pfsense}{
+  name={pfSense},
+  description={an open source software distribution that is based on \gls{freebsd} with its target usecases as \gls{os} for routers}
+}
+\newglossaryentry{freebsd}{
+  name={FreeBSD},
+  description={a free, \gls{unix}-like computer \gls{os}. It has similarities to \gls{linux} while it differs in terms of delivering things like device drivers, the \gls{kernel} and its own userland out of the box that for example \gls{linux} doesn't.\footnote{FreeBSD: the other free UNIX family -- \url{http://www.informit.com/articles/article.aspx?p=439601}}}
+}
+\newglossaryentry{jail}{
+  name={jail},
+  description={a separated environment underneath an already existing \gls{os} that acts as a sandbox and can be used to lock processes / users into said subsystem and not giving them access to the main \gls{os} and therefore increasing security}
+}
+\newglossaryentry{lsblk}{
+  name={\texttt{lsblk}},
+  description={lists information about all or the specified block devices and therefore needs to read the \texttt{sysfs} filesystem to gather information\footnote{lsblk - Linux man page -- \url{http://linux.die.net/man/8/lsblk}}}
+}
+\newglossaryentry{qemu}{
+  name={\texttt{qemu}},
+  description={a generic and open source machine emulator and virtualizer\footnote{QEMU - Wiki -- \url{http://wiki.qemu.org/Main_Page}}}
+}
+\newglossaryentry{rivest}{
+  name={Ron Rivest},
+  description={inventor of the \gls{rc4}-algorithm}
+}
+\newglossaryentry{xor}{
+  name={XOR},
+  description={logical operation, also known as exclusive disjunction}
+}
+\newglossaryentry{sbox}{
+  name={S-Box},
+  description={allows for substitution, used for symmetric key algorithms}
+}
+\newglossaryentry{osimodel}{
+  name={OSI model},
+  description={a conceptual model for functions of a telecommunication or computing system without regard to their underlying internal structure and technology}
+}
+\newglossaryentry{diffhell}{
+  name={Diffie-Hellman key exchange},
+  description={method of securely exchanging cryptographic keys over a public channel}
+}
+\newglossaryentry{nonce}{
+  name={nonce},
+  plural={nonces},
+  description={an arbitrary number that may only be used once}
+}
+\newglossaryentry{ifconfig}{
+  name={\texttt{ifconfig}},
+  description={allows to configure network interfaces\footnote{ifconfig - Linux man page -- \url{http://linux.die.net/man/8/ifconfig}}}
+}
