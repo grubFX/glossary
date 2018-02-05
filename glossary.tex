@@ -366,7 +366,7 @@
 }
 \newglossaryentry{ndk}{
   type=\acronymtype,
-  name={ndk},
+  name={NDK},
   first={native development kit (NDK)},
   description={native development kit}
 }
@@ -508,7 +508,7 @@
 }
 \newglossaryentry{posix}{
   name={POSIX},
-  description={defines a standard operating system interface and environment, including a command interpreter, and common utility programs to support applications portability at the source code level. It is intended to be used by both application developers and system implementors.\footnote{The Open Group Base Specifications -- \url{http://pubs.opengroup.org/onlinepubs/9699919799}}}
+  description={defines a standard operating system interface and environment, including a command interpreter, and common utility programs to support applications portability at the source code level. It is intended to be used by both application developers and system implementers.\footnote{The Open Group Base Specifications -- \url{http://pubs.opengroup.org/onlinepubs/9699919799}}}
 }
 \newglossaryentry{linux}{
   name={Linux},
@@ -520,15 +520,11 @@
 }
 \newglossaryentry{debian}{
   name={Debian},
-  description={a \gls{unix}-like computer \gls{os} and a \gls{linux} distribution that is composed entirely of free and open-source software.\footnote{Debian -- The Universal Operation System -- \url{https://www.debian.org/index.en.html}}}%The whole project was founded by \gls{murdock}}
+  description={a \gls{unix}-like computer \gls{os} and a \gls{linux} distribution that is composed entirely of \gls{foss}.\footnote{Debian -- The Universal Operation System -- \url{https://www.debian.org/index.en.html}}}%The whole project was founded by \gls{murdock}}
 }
 \newglossaryentry{raspberrypi}{
   name={Raspberry Pi},
   description={a series of credit card sized single-board computers by the Raspberry Pi Foundation with the intention of promoting the teaching of basic computer science in schools and developing countries\footnote{Raspberry Pi FAQs -- \url{https://www.raspberrypi.org/help/faqs}}}
-}
-\newglossaryentry{deboot}{
-  name={\texttt{debootstrap}},
-  description={a tool which allows to install a \gls{debian} base system into a directory of another, already installed system or to create bootable disk images. It doesn't require an installation \gls{cd}, just access to a \gls{debian} repository\footnote{Debootstrap - Debian Wiki -- \url{https://wiki.debian.org/Debootstrap}}}
 }
 \newglossaryentry{torvalds}{
   name={Linus Torvalds},
@@ -540,7 +536,7 @@
 }
 \newglossaryentry{atowns}{
   name={Anthony Towns},
-  description={author of debootstrap}
+  description={author of \gls{deboot}}
 }
 \newglossaryentry{thinclient}{
   name={thin-client},
@@ -555,21 +551,9 @@
   name={Unix},
   description={a family of multitasking, multiuser computer \glspl{os}}
 }
-\newglossaryentry{chroot}{
-  name={\texttt{chroot}},
-  description={an operation that changes the apparent root directory for the current running process and their children. A program that is run in such a modified environment cannot access files and commands outside that environmental directory tree\footnote{Change root - ArchWiki -- \url{https://wiki.archlinux.org/index.php/Change_root}}}
-}
 \newglossaryentry{tarball}{
   name={tarball},
   description={the name that describes a group or archive of files that are bundled together usually having the \texttt{.tar} file extension}
-}
-\newglossaryentry{apt}{
-  name={\texttt{apt(--get)} / \texttt{aptitude}},
-  description={a set of core tools inside \gls{debian} for un-/installing and updating applications}
-}
-\newglossaryentry{dpkg}{
-  name={\texttt{dpkg}},
-  description={the software at the base of the package management system in \gls{debian}\footnote{dpkg - Linux man page -- \url{http://linux.die.net/man/1/dpkg}}}
 }
 \newglossaryentry{grml}{
   name={grml},
@@ -587,26 +571,6 @@
   name={Arch \gls{linux}},
   description={an independently developed, i686/x86-64 general purpose \gls{gnu}/\gls{linux} distribution versatile enough to suit any role. Development focuses on simplicity, minimalism, and code elegance\footnote{Arch Linux - ArchWiki -- \url{https://wiki.archlinux.org/index.php/Arch_Linux}}}
 }
-\newglossaryentry{mkdir}{
-  name={\texttt{mkdir}},
-  description={a command for \gls{unix}-based \glspl{os} to create a directory\footnote{mkdir - Linux man page -- \url{http://linux.die.net/man/1/mkdir}}}
-}
-\newglossaryentry{cd}{
-  name={\texttt{cd}},
-  description={a command for \gls{unix}-based \glspl{os} to change the current working directory\footnote{cd - Linux man page -- \url{http://linux.die.net/man/1/cd}}}
-}
-\newglossaryentry{dd}{
-  name={\texttt{dd}},
-  description={a tool for \gls{unix}-based \glspl{os} for copying and converting files. It's sometimes referred to as ``disk / data destroyer'' due to the tools capabilities like being able to directly write to a disk regardless of \gls{eg} any present filesystem.\footnote{dd - Linux man page -- \url{http://linux.die.net/man/1/dd}}}
-}
-\newglossaryentry{wget}{
-  name={\texttt{wget}},
-  description={a command for \gls{unix}-based \glspl{os} for non-interactive download of files from the web supporting HTTP, HTTPS and FTP} % TODO entries for HTTP[S] & FTP
-}
-\newglossaryentry{unzip}{
-  name={\texttt{unzip}},
-  description={a command for \gls{unix}-based \glspl{os} to list, test and extract compressed files in a ZIP archive}
-}
 \newglossaryentry{relcan}{
   name={release candidate},
   description={version of a program that is nearly ready for release but may still have a few bugs; the status between beta version and release version~\cite{wiki_release_candidate}}
@@ -623,14 +587,7 @@
   name={jail},
   description={a separated environment underneath an already existing \gls{os} that acts as a sandbox and can be used to lock processes / users into said subsystem and not giving them access to the main \gls{os} and therefore increasing security}
 }
-\newglossaryentry{lsblk}{
-  name={\texttt{lsblk}},
-  description={lists information about all or the specified block devices and therefore needs to read the \texttt{sysfs} filesystem to gather information\footnote{lsblk - Linux man page -- \url{http://linux.die.net/man/8/lsblk}}}
-}
-\newglossaryentry{qemu}{
-  name={\texttt{qemu}},
-  description={a generic and open source machine emulator and virtualizer\footnote{QEMU - Wiki -- \url{http://wiki.qemu.org/Main_Page}}}
-}
+
 \newglossaryentry{rivest}{
   name={Ron Rivest},
   description={inventor of the \gls{rc4}-algorithm}
@@ -656,10 +613,7 @@
   plural={nonces},
   description={an arbitrary number that may only be used once}
 }
-\newglossaryentry{ifconfig}{
-  name={\texttt{ifconfig}},
-  description={allows to configure network interfaces\footnote{ifconfig - Linux man page -- \url{http://linux.die.net/man/8/ifconfig}}}
-}
+
 \newglossaryentry{eth}{
   name={Ethereum},
   description={a decentralized platform that runs smart contracts: applications that run exactly as programmed without any possibility of downtime, censorship, fraud or third party interference.\footnote{Ethereum -- \url{https://ethereum.org}}}
@@ -679,4 +633,61 @@
 \newglossaryentry{mod_con}{
   name={modular connector},
   description={an electrical connector that was originally designed for use in telephone wiring, but has since been used for many other purposes where the probably most well known applications are for telephone and Ethernet. While often falsely being referred to as registered jacks, the \gls{rj} specifications define the wiring patterns of the jacks, not the physical dimensions or geometry of the connectors, which are actually specified under ISO standard 8877~\cite{iso8877, modular_connector}}
+}
+
+% ------------------------------------------------------------------------------
+% spacing
+% ...
+% more spacing
+% ...
+% and even more spacing
+% ...
+% commands ---------------------------------------------------------------------
+\newglossaryentry{lsblk}{
+  name={\texttt{lsblk}},
+  description={lists information about all or the specified block devices and therefore needs to read the \texttt{sysfs} filesystem to gather information\footnote{lsblk - Linux man page -- \url{http://linux.die.net/man/8/lsblk}}}
+}
+\newglossaryentry{qemu}{
+  name={\texttt{qemu}},
+  description={a generic and open source machine emulator and virtualizer\footnote{QEMU - Wiki -- \url{http://wiki.qemu.org/Main_Page}}}
+}
+\newglossaryentry{ifconfig}{
+  name={\texttt{ifconfig}},
+  description={allows to configure network interfaces\footnote{ifconfig - Linux man page -- \url{http://linux.die.net/man/8/ifconfig}}}
+}
+\newglossaryentry{mkdir}{
+  name={\texttt{mkdir}},
+  description={a command for \gls{unix}-based \glspl{os} to create a directory\footnote{mkdir - Linux man page -- \url{http://linux.die.net/man/1/mkdir}}}
+}
+\newglossaryentry{cd}{
+  name={\texttt{cd}},
+  description={a command for \gls{unix}-based \glspl{os} to change the current working directory\footnote{cd - Linux man page -- \url{http://linux.die.net/man/1/cd}}}
+}
+\newglossaryentry{dd}{
+  name={\texttt{dd}},
+  description={a tool for \gls{unix}-based \glspl{os} for copying and converting files. It's sometimes referred to as ``disk / data destroyer'' due to the tools capabilities like being able to directly write to a disk regardless of \gls{eg} any present filesystem.\footnote{dd - Linux man page -- \url{http://linux.die.net/man/1/dd}}}
+}
+\newglossaryentry{wget}{
+  name={\texttt{wget}},
+  description={a command for \gls{unix}-based \glspl{os} for non-interactive download of files from the web supporting HTTP, HTTPS and FTP} % TODO entries for HTTP[S] & FTP
+}
+\newglossaryentry{unzip}{
+  name={\texttt{unzip}},
+  description={a command for \gls{unix}-based \glspl{os} to list, test and extract compressed files in a ZIP archive}
+}
+\newglossaryentry{apt}{
+  name={\texttt{apt[-get]} / \texttt{aptitude}},
+  description={a set of core tools inside \gls{debian} (based \glspl{os}) for un-/installing and updating applications}
+}
+\newglossaryentry{dpkg}{
+  name={\texttt{dpkg}},
+  description={the software at the base of the package management system in \gls{debian}\footnote{dpkg - Linux man page -- \url{http://linux.die.net/man/1/dpkg}}}
+}
+\newglossaryentry{chroot}{
+  name={\texttt{chroot}},
+  description={an operation that changes the apparent root directory for the current running process and their children. A program that is run in such a modified environment cannot access files and commands outside that environmental directory tree\footnote{Change root - ArchWiki -- \url{https://wiki.archlinux.org/index.php/Change_root}}}
+}
+\newglossaryentry{deboot}{
+  name={\texttt{debootstrap}},
+  description={a tool which allows to install a \gls{debian} base system into a directory of another, already installed system or to create bootable disk images. It doesn't require an installation \gls{cd}, just access to a \gls{debian} repository\footnote{Debootstrap - Debian Wiki -- \url{https://wiki.debian.org/Debootstrap}}}
 }
