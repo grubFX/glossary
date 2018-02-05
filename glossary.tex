@@ -483,7 +483,11 @@
   name={RJ},
   description={registered jack -- see \gls{mod_con}}
 }
-
+\newglossaryentry{led}{
+  type=\acronymtype,
+  name={LED},
+  description={light emitting diode}
+}
 
 % ------------------------------------------------------------------------------
 % spacing
@@ -492,7 +496,7 @@
 % ...
 % and even more spacing
 % ...
-% glossary ---------------------------------------------------------------------
+% GLOSSARY ---------------------------------------------------------------------
 
 \newglossaryentry{gnu_long}{
   name={GNU},
@@ -508,7 +512,7 @@
 }
 \newglossaryentry{posix}{
   name={POSIX},
-  description={defines a standard operating system interface and environment, including a command interpreter, and common utility programs to support applications portability at the source code level. It is intended to be used by both application developers and system implementers.\footnote{The Open Group Base Specifications -- \url{http://pubs.opengroup.org/onlinepubs/9699919799}}}
+  description={defines a standard operating system interface and environment, including a command interpreter, and common utility programs to support applications portability at the source code level. It is intended to be used by both application developers and system implementers\footnote{The Open Group Base Specifications -- \url{http://pubs.opengroup.org/onlinepubs/9699919799}}}
 }
 \newglossaryentry{linux}{
   name={Linux},
@@ -520,7 +524,7 @@
 }
 \newglossaryentry{debian}{
   name={Debian},
-  description={a \gls{unix}-like computer \gls{os} and a \gls{linux} distribution that is composed entirely of \gls{foss}.\footnote{Debian -- The Universal Operation System -- \url{https://www.debian.org/index.en.html}}}%The whole project was founded by \gls{murdock}}
+  description={a \gls{unix}-like computer \gls{os} and a \gls{linux} distribution that is composed entirely of \gls{foss}\footnote{Debian -- The Universal Operation System -- \url{https://www.debian.org/index.en.html}}}%The whole project was founded by \gls{murdock}}
 }
 \newglossaryentry{raspberrypi}{
   name={Raspberry Pi},
@@ -642,7 +646,8 @@
 % ...
 % and even more spacing
 % ...
-% commands ---------------------------------------------------------------------
+% COMMANDS ---------------------------------------------------------------------
+
 \newglossaryentry{lsblk}{
   name={\texttt{lsblk}},
   description={lists information about all or the specified block devices and therefore needs to read the \texttt{sysfs} filesystem to gather information\footnote{lsblk - Linux man page -- \url{http://linux.die.net/man/8/lsblk}}}
@@ -665,7 +670,7 @@
 }
 \newglossaryentry{dd}{
   name={\texttt{dd}},
-  description={a tool for \gls{unix}-based \glspl{os} for copying and converting files. It's sometimes referred to as ``disk / data destroyer'' due to the tools capabilities like being able to directly write to a disk regardless of \gls{eg} any present filesystem.\footnote{dd - Linux man page -- \url{http://linux.die.net/man/1/dd}}}
+  description={a tool for \gls{unix}-based \glspl{os} for copying and converting files. It's sometimes referred to as ``disk / data destroyer'' due to the tools capabilities like being able to directly write to a disk regardless of \gls{eg} any present filesystem\footnote{dd - Linux man page -- \url{http://linux.die.net/man/1/dd}}}
 }
 \newglossaryentry{wget}{
   name={\texttt{wget}},
@@ -676,7 +681,7 @@
   description={a command for \gls{unix}-based \glspl{os} to list, test and extract compressed files in a ZIP archive}
 }
 \newglossaryentry{apt}{
-  name={\texttt{apt[-get]} / \texttt{aptitude}},
+  name={\texttt{apt[-get]}},
   description={a set of core tools inside \gls{debian} (based \glspl{os}) for un-/installing and updating applications}
 }
 \newglossaryentry{dpkg}{
