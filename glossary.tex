@@ -69,21 +69,6 @@
   first={Release Candidate (RC)},
   description={\gls{relcan}}
 }
-\newglossaryentry{mb}{
-  type=\acronymtype,
-  name={MB},
-  description={Megabyte}
-}
-\newglossaryentry{gb}{
-  type=\acronymtype,
-  name={GB},
-  description={Gigabyte}
-}
-\newglossaryentry{gib}{
-  type=\acronymtype,
-  name={GiB},
-  description={Gibibyte}
-}
 \newglossaryentry{gui}{
   type=\acronymtype,
   name={GUI},
@@ -267,16 +252,6 @@
   name={PIN},
   plural={PINs},
   description={personal identification number}
-}
-\newglossaryentry{mhz}{
-  type=\acronymtype,
-  name={MHz},
-  description={Megahertz}
-}
-\newglossaryentry{ghz}{
-  type=\acronymtype,
-  name={GHz},
-  description={Gigahertz}
 }
 \newglossaryentry{pbkdf2}{
   type=\acronymtype,
@@ -616,21 +591,6 @@
   name={AC},
   description={alternating current}
 }
-\newglossaryentry{volt}{
-  type=\acronymtype,
-  name={V},
-  description={volt, unit of electrical voltage}
-}
-\newglossaryentry{amp}{
-  type=\acronymtype,
-  name={A},
-  description={ampere, unit of electrical current}
-}
-\newglossaryentry{watt}{
-  type=\acronymtype,
-  name={W},
-  description={watt, unit of power}
-}
 \newglossaryentry{psu}{
   type=\acronymtype,
   name={PSU},
@@ -869,4 +829,92 @@
 \newglossaryentry{deboot}{
   name={\texttt{debootstrap}},
   description={a tool which allows to install a \gls{debian} base system into a directory of another, already installed system or to create bootable disk images. It doesn't require an installation \gls{cd}, just access to a \gls{debian} repository\footnote{Debootstrap - Debian Wiki -- \url{https://wiki.debian.org/Debootstrap}}}
+}
+% ------------------------------------------------------------------------------
+% spacing
+% ...
+% more spacing
+% ...
+% and even more spacing
+% ...
+% UNITS ------------------------------------------------------------------------
+\newglossary[un1]{unit}{un2}{un3}{Units}
+
+\newglossarystyle{units}{
+  \renewenvironment{theglossary}
+    {\begin{longtable}{clx}
+    {\end{longtable}}
+  
+  \renewcommand*{\glossaryheader}{
+    \textbf{Symbol} & \textbf{Name} & \textbf{Description} \endhead
+  }
+
+  \renewcommand*{\glsgroupheading}[1]{}
+
+  \renewcommand*{\glossaryentryfield}[4]{
+    \glstarget{##1}{##2} & \glsentryuseri{##1} & ##3 \\
+  }
+
+  \renewcommand*{\glossarysubentryfield}[6]{
+    \glossaryentryfield{##2}{##3}{##4}{##5}{##6}
+  }
+
+  \renewcommand*{\glsgroupskip}{}
+}
+
+\newglossaryentry{mb}{
+  type=unit,
+  name={MB},
+  description={},
+  user1={Megabyte},
+  sort=mb
+}
+\newglossaryentry{gb}{
+  type=unit,
+  name={GB},
+  description={},
+  user1={Gigabyte},
+  sort=gb
+}
+\newglossaryentry{gib}{
+  type=unit,
+  name={GiB},
+  description={},
+  user1={Gibibyte},
+  sort=gib
+}
+\newglossaryentry{mhz}{
+  type=unit,
+  name={MHz},
+  description={},
+  user1={Megahertz},
+  sort=mhz
+}
+\newglossaryentry{ghz}{
+  type=unit,
+  name={GHz},
+  description={},
+  user1={Gigahertz},
+  sort=ghz
+}
+\newglossaryentry{volt}{
+  type=unit,
+  name={V},
+  description={unit of electrical voltage},
+  user1={Volt},
+  sort=v
+}
+\newglossaryentry{amp}{
+  type=unit,
+  name={A},
+  description={unit of electrical current},
+  user1={Ampere},
+  sort=a
+}
+\newglossaryentry{watt}{
+  type=unit,
+  name={W},
+  description={unit of power},
+  user1={Watt},
+  sort=w
 }
