@@ -1,4 +1,113 @@
-% acronyms
+% units
+\newglossary[unit1]{unit}{unit2}{unit3}{Units}
+
+\newglossarystyle{units}{
+  \renewenvironment{theglossary}
+    {\begin{longtable}{cll}}%
+    {\end{longtable}}%
+  
+  \renewcommand*{\glossaryheader}{
+    \textbf{Symbol} & \textbf{Unit} & \textbf{Description} \\ \hline \tiny \endhead
+  }
+
+  \renewcommand*{\glsgroupheading}[1]{}
+
+  \renewcommand*{\glossaryentryfield}[4]{
+    \small \glstarget{##1}{##2} & \glsentryuseri{##1} & ##3 \\ \tiny \\
+  }
+
+  \renewcommand*{\glossarysubentryfield}[6]{
+    \glossaryentryfield{##2}{##3}{##4}{##5}{##6}
+  }
+
+  \renewcommand*{\glsgroupskip}{}
+}
+
+\newglossaryentry{mb}{
+  type=unit,
+  name={MB},
+  description={},
+  user1={Megabyte},
+  sort=mb
+}
+\newglossaryentry{gb}{
+  type=unit,
+  name={GB},
+  description={},
+  user1={Gigabyte},
+  sort=gb
+}
+\newglossaryentry{gib}{
+  type=unit,
+  name={GiB},
+  description={},
+  user1={Gibibyte},
+  sort=gib
+}
+\newglossaryentry{mhz}{
+  type=unit,
+  name={MHz},
+  description={},
+  user1={Megahertz},
+  sort=mhz
+}
+\newglossaryentry{ghz}{
+  type=unit,
+  name={GHz},
+  description={},
+  user1={Gigahertz},
+  sort=ghz
+}
+\newglossaryentry{volt}{
+  type=unit,
+  name={V},
+  description={unit of electrical voltage},
+  user1={Volt},
+  sort=v
+}
+\newglossaryentry{amp}{
+  type=unit,
+  name={A},
+  description={unit of electrical current},
+  user1={Ampere},
+  sort=a
+}
+\newglossaryentry{watt}{
+  type=unit,
+  name={W},
+  description={unit of power},
+  user1={Watt},
+  sort=w
+}
+\newglossaryentry{meter}{
+  type=unit,
+  name={m},
+  description={unit of length},
+  user1={Meter},
+  sort=m
+}
+\newglossaryentry{inch}{
+  type=unit,
+  name={''},
+  description={unit of length, 25.4\gls{millimeter}},
+  user1={Inch},
+  sort=in
+}
+\newglossaryentry{millimeter}{
+  type=unit,
+  name={mm},
+  description={unit of length},
+  user1={Millimeter},
+  sort=mm
+}
+% ------------------------------------------------------------------------------
+% spacing
+% ...
+% more spacing
+% ...
+% and even more spacing
+% ...
+% ACRONYMS ---------------------------------------------------------------------
 \newglossaryentry{usb}{
   type=\acronymtype,
   name={USB},
@@ -763,7 +872,7 @@
 }
 \newglossaryentry{nema_17}{
   name={NEMA 17},
-  description={a stepper motor with a 1.7 x 1.7 inch faceplate as specified by \gls{nema}}
+  description={a stepper motor with a 1.7 x 1.7\gls{inch} faceplate as specified by \gls{nema}}
 }
 \newglossaryentry{docker}{
   name={Docker},
@@ -829,92 +938,4 @@
 \newglossaryentry{deboot}{
   name={\texttt{debootstrap}},
   description={a tool which allows to install a \gls{debian} base system into a directory of another, already installed system or to create bootable disk images. It doesn't require an installation \gls{cd}, just access to a \gls{debian} repository\footnote{Debootstrap - Debian Wiki -- \url{https://wiki.debian.org/Debootstrap}}}
-}
-% ------------------------------------------------------------------------------
-% spacing
-% ...
-% more spacing
-% ...
-% and even more spacing
-% ...
-% UNITS ------------------------------------------------------------------------
-\newglossary[un1]{unit}{un2}{un3}{Units}
-
-\newglossarystyle{units}{
-  \renewenvironment{theglossary}
-    {\begin{longtable}{clx}
-    {\end{longtable}}
-  
-  \renewcommand*{\glossaryheader}{
-    \textbf{Symbol} & \textbf{Name} & \textbf{Description} \endhead
-  }
-
-  \renewcommand*{\glsgroupheading}[1]{}
-
-  \renewcommand*{\glossaryentryfield}[4]{
-    \glstarget{##1}{##2} & \glsentryuseri{##1} & ##3 \\
-  }
-
-  \renewcommand*{\glossarysubentryfield}[6]{
-    \glossaryentryfield{##2}{##3}{##4}{##5}{##6}
-  }
-
-  \renewcommand*{\glsgroupskip}{}
-}
-
-\newglossaryentry{mb}{
-  type=unit,
-  name={MB},
-  description={},
-  user1={Megabyte},
-  sort=mb
-}
-\newglossaryentry{gb}{
-  type=unit,
-  name={GB},
-  description={},
-  user1={Gigabyte},
-  sort=gb
-}
-\newglossaryentry{gib}{
-  type=unit,
-  name={GiB},
-  description={},
-  user1={Gibibyte},
-  sort=gib
-}
-\newglossaryentry{mhz}{
-  type=unit,
-  name={MHz},
-  description={},
-  user1={Megahertz},
-  sort=mhz
-}
-\newglossaryentry{ghz}{
-  type=unit,
-  name={GHz},
-  description={},
-  user1={Gigahertz},
-  sort=ghz
-}
-\newglossaryentry{volt}{
-  type=unit,
-  name={V},
-  description={unit of electrical voltage},
-  user1={Volt},
-  sort=v
-}
-\newglossaryentry{amp}{
-  type=unit,
-  name={A},
-  description={unit of electrical current},
-  user1={Ampere},
-  sort=a
-}
-\newglossaryentry{watt}{
-  type=unit,
-  name={W},
-  description={unit of power},
-  user1={Watt},
-  sort=w
 }
