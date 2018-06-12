@@ -3,8 +3,8 @@
 
 \newglossarystyle{units}{
   \renewenvironment{theglossary}
-    {\begin{longtable}{cll}}%
-    {\end{longtable}}%
+    {\begin{longtable}{cll}}
+    {\end{longtable}}
   
   \renewcommand*{\glossaryheader}{
     \textbf{Symbol} & \textbf{Unit} & \textbf{Description} \\ \hline \tiny \endhead
@@ -23,17 +23,31 @@
   \renewcommand*{\glsgroupskip}{}
 }
 
+\newglossaryentry{bit}{
+  type=unit,
+  name={b},
+  description={basic unit of information, one binary digit},
+  user1={Bit},
+  sort=bit
+}
+\newglossaryentry{byte}{
+  type=unit,
+  name={B},
+  description={group of eight \glsuseri{bit}},
+  user1={Byte},
+  sort=byte
+}
 \newglossaryentry{mb}{
   type=unit,
   name={MB},
-  description={},
+  description={$10^6$~\glsuseri{byte}},
   user1={Megabyte},
   sort=mb
 }
 \newglossaryentry{gb}{
   type=unit,
   name={GB},
-  description={},
+  description={$10^9$~\glsuseri{byte}},
   user1={Gigabyte},
   sort=gb
 }
@@ -44,62 +58,77 @@
   user1={Gibibyte},
   sort=gib
 }
+\newglossaryentry{s}{
+  type=unit,
+  name={s},
+  description={base unit of time},
+  user1={Second},
+  sort=s
+}
+\newglossaryentry{hz}{
+  type=unit,
+  name={Hz},
+  description={unit of frequency, one cycle per second},
+  user1={Megahertz},
+  sort=hz
+}
 \newglossaryentry{mhz}{
   type=unit,
   name={MHz},
-  description={},
+  description={$10^6$\gls{hz}},
   user1={Megahertz},
   sort=mhz
 }
 \newglossaryentry{ghz}{
   type=unit,
   name={GHz},
-  description={},
+  description={$10^9$\gls{hz}},
   user1={Gigahertz},
   sort=ghz
 }
 \newglossaryentry{volt}{
   type=unit,
   name={V},
-  description={unit of electrical voltage},
+  description={derived unit of electrical voltage},
   user1={Volt},
   sort=v
 }
 \newglossaryentry{amp}{
   type=unit,
   name={A},
-  description={unit of electrical current},
+  description={base unit of electrical current},
   user1={Ampere},
   sort=a
 }
 \newglossaryentry{watt}{
   type=unit,
   name={W},
-  description={unit of power},
+  description={derived unit of power},
   user1={Watt},
   sort=w
 }
 \newglossaryentry{meter}{
   type=unit,
   name={m},
-  description={unit of length},
+  description={base unit of length},
   user1={Meter},
   sort=m
-}
-\newglossaryentry{inch}{
-  type=unit,
-  name={''},
-  description={unit of length, 25.4\gls{millimeter}},
-  user1={Inch},
-  sort=in
 }
 \newglossaryentry{millimeter}{
   type=unit,
   name={mm},
-  description={unit of length},
+  description={$10^{-3}$\gls{meter}},
   user1={Millimeter},
   sort=mm
 }
+\newglossaryentry{inch}{
+  type=unit,
+  name={''},
+  description={25.4\gls{millimeter}},
+  user1={Inch},
+  sort=in
+}
+
 % ------------------------------------------------------------------------------
 % spacing
 % ...
@@ -108,6 +137,7 @@
 % and even more spacing
 % ...
 % ACRONYMS ---------------------------------------------------------------------
+
 \newglossaryentry{usb}{
   type=\acronymtype,
   name={USB},
@@ -714,18 +744,22 @@
 \newglossaryentry{gpg}{
   type=\acronymtype,
   name={GPG},
+  first={GNU privacy guard (GPG)},
   description={\gls{gnu} privacy guard, an independent implementation of the \gls{openpgp} standard}
 }
 \newglossaryentry{pgp}{
   type=\acronymtype,
   name={PGP},
+  first={pretty good privacy (PGP)},
   description={pretty good privacy, a proprietary encryption solution, with the rights owned by Symantec}
 }
 \newglossaryentry{ietf}{
   type=\acronymtype,
   name={IETF},
+  %first={Internet engineering task force (IETF)},
   description={Internet engineering task force}
 }
+
 % ------------------------------------------------------------------------------
 % spacing
 % ...
@@ -903,10 +937,14 @@
   description={a mobile \gls{os} created and developed by Apple Inc. exclusively for its hardware}
 }
 \newglossaryentry{openpgp}{
-  type=\acronymtype,
   name={OpenPGP},
-  description={an open-source, \gls{ietf}-approved standard describing encryption technologies interoperable with \gls{pgp}. The term can be used to describe any program that supports the OpenPGP system.}
+  description={an open-source, \gls{ietf}-approved standard describing encryption technologies interoperable with \gls{pgp}. The term can be used to describe any program that supports the OpenPGP system}
 }
+\newglossaryentry{ruby}{
+  name={Ruby},
+  description={a dynamic, open source programming language with a focus on simplicity and productivity\footnote{Ruby -- \url{https://www.ruby-lang.org/en}}}
+}
+
 % ------------------------------------------------------------------------------
 % spacing
 % ...
@@ -949,8 +987,8 @@
   description={a command for \gls{unix}-based \glspl{os} to list, test and extract compressed files in a ZIP archive}
 }
 \newglossaryentry{apt}{
-  name={\texttt{apt[-get]}},
-  description={a set of core tools inside \gls{debian} (based \glspl{os}) for un-/installing and updating applications}
+  name={\texttt{apt}},
+  description={alternatively \texttt{apt-get}, a set of core tools inside \gls{debian} (based \glspl{os}) for un-/installing and updating applications}
 }
 \newglossaryentry{dpkg}{
   name={\texttt{dpkg}},
@@ -963,4 +1001,12 @@
 \newglossaryentry{deboot}{
   name={\texttt{debootstrap}},
   description={a tool which allows to install a \gls{debian} base system into a directory of another, already installed system or to create bootable disk images. It doesn't require an installation \gls{cd}, just access to a \gls{debian} repository\footnote{Debootstrap - Debian Wiki -- \url{https://wiki.debian.org/Debootstrap}}}
+}
+\newglossaryentry{rvm}{
+  name={\texttt{rvm}},
+  description={\gls{ruby} version manager}
+}
+\newglossaryentry{curl}{
+  name={\texttt{curl}},
+  description={c\gls{url} is a computer software project providing a library and command-line tool for transferring data using various protocols}
 }
