@@ -28,26 +28,28 @@
   name={b},
   description={basic unit of information, one binary digit},
   user1={Bit},
+  plural={Bits},
   sort=bit
 }
 \newglossaryentry{byte}{
   type=unit,
   name={B},
-  description={group of eight \glsuseri{bit}},
+  description={group of eight \glspl{bit}},
   user1={Byte},
+  plural={Bytes},
   sort=byte
 }
 \newglossaryentry{mb}{
   type=unit,
   name={MB},
-  description={$10^6$~\glsuseri{byte}},
+  description={$10^6$~\glspl{byte}},
   user1={Megabyte},
   sort=mb
 }
 \newglossaryentry{gb}{
   type=unit,
   name={GB},
-  description={$10^9$~\glsuseri{byte}},
+  description={$10^9$~\glspl{byte}},
   user1={Gigabyte},
   sort=gb
 }
@@ -267,7 +269,7 @@
 \newglossaryentry{crc32}{
   type=\acronymtype,
   name={CRC32},
-  description={\gls{crc} with a resulting 32 bit hash value}
+  description={\gls{crc} with a resulting 32 \glsuseri{bit} hash value}
 }
 \newglossaryentry{ksa}{
   type=\acronymtype,
@@ -649,7 +651,7 @@
 \newglossaryentry{lorawan}{
   type=\acronymtype,
   name={LoRaWAN},
-  description={long range \gls{wan}, operating in the \gls{ism} band and using 128 bit \gls{aes} for encryption as well as \gls{mic} for frame integrity}
+  description={long range \gls{wan}, operating in the \gls{ism} band and using 128 \glsuseri{bit} \gls{aes} for encryption as well as \gls{mic} for frame integrity}
 }
 \newglossaryentry{gps}{
   type=\acronymtype,
@@ -787,7 +789,8 @@
 }
 \newglossaryentry{linux}{
   name={Linux},
-  description={a \gls{unix}-like and mostly \gls{posix}-compliant \gls{os} assembled under the model of \gls{foss} development and distribution. The defining component is the \gls{kernel}}
+  description={a \gls{unix}-like %and mostly \gls{posix}-compliant
+  \gls{os} assembled under the model of \gls{foss} development and distribution. The defining component is the \gls{kernel}}
 }
 \newglossaryentry{kali}{
   name={Kali \gls{linux}},
@@ -918,7 +921,7 @@
 }
 \newglossaryentry{x86_64}{
   name={x86-64},
-  description={the 64-bit version of the \gls{x86} instruction set}
+  description={the 64-\glsuseri{bit} version of the \gls{x86} instruction set}
 }
 \newglossaryentry{arduino}{
   name={Arduino},
