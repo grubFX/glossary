@@ -1,6 +1,6 @@
 % units
 \newglossary[unit1]{unit}{unit2}{unit3}{Units}
-
+\glsnoexpandfields
 \newglossarystyle{units}{
   \renewenvironment{theglossary}
     {\begin{longtable}{cll}}
@@ -25,7 +25,7 @@
 
 \newglossaryentry{bit}{
   type=unit,
-  name={b},
+  name={\si{\bit}},
   description={basic unit of information, one binary digit},
   user1={Bit},
   plural={Bits},
@@ -33,7 +33,7 @@
 }
 \newglossaryentry{byte}{
   type=unit,
-  name={B},
+  name={\si{\byte}},
   description={group of eight \glspl{bit}},
   user1={Byte},
   plural={Bytes},
@@ -41,92 +41,92 @@
 }
 \newglossaryentry{mb}{
   type=unit,
-  name={MB},
-  description={$10^6$~\glspl{byte}},
+  name={\si{\mega\byte}},
+  description={\SI{e6}{\byte}},
   user1={Megabyte},
   sort=mb
 }
 \newglossaryentry{gb}{
   type=unit,
-  name={GB},
-  description={$10^9$~\glspl{byte}},
+  name={\si{\giga\byte}},
+  description={\SI{e9}{\byte}},
   user1={Gigabyte},
   sort=gb
 }
 \newglossaryentry{gib}{
   type=unit,
-  name={GiB},
+  name={\si{\gibi\byte}},
   description={},
   user1={Gibibyte},
   sort=gib
 }
 \newglossaryentry{s}{
   type=unit,
-  name={s},
+  name={\si{\seconds}},
   description={base unit of time},
   user1={Second},
   sort=s
 }
 \newglossaryentry{hz}{
   type=unit,
-  name={Hz},
+  name={\si{\hertz}},
   description={unit of frequency, one cycle per second},
   user1={Megahertz},
   sort=hz
 }
 \newglossaryentry{mhz}{
   type=unit,
-  name={MHz},
-  description={$10^6$\gls{hz}},
+  name={\si{\mhz}},
+  description={\SI{e6}{\hz}},
   user1={Megahertz},
   sort=mhz
 }
 \newglossaryentry{ghz}{
   type=unit,
-  name={GHz},
-  description={$10^9$\gls{hz}},
+  name={\si{\ghz}},
+  description={\SI{e9}{\hz}},
   user1={Gigahertz},
   sort=ghz
 }
 \newglossaryentry{volt}{
   type=unit,
-  name={V},
+  name={\si{\volt}},
   description={derived unit of electrical voltage},
   user1={Volt},
   sort=v
 }
 \newglossaryentry{amp}{
   type=unit,
-  name={A},
+  name={\si{\ampere}},
   description={base unit of electrical current},
   user1={Ampere},
   sort=a
 }
 \newglossaryentry{watt}{
   type=unit,
-  name={W},
+  name={\si{\watt}},
   description={derived unit of power},
   user1={Watt},
   sort=w
 }
 \newglossaryentry{meter}{
   type=unit,
-  name={m},
+  name={\si{\metre}},
   description={base unit of length},
   user1={Meter},
   sort=m
 }
 \newglossaryentry{millimeter}{
   type=unit,
-  name={mm},
-  description={$10^{-3}$\gls{meter}},
+  name={\si{\milli\metre}},
+  description={\SI{e-3}{\metre}},
   user1={Millimeter},
   sort=mm
 }
 \newglossaryentry{inch}{
   type=unit,
   name={''},
-  description={25.4\gls{millimeter}},
+  description={\SI{25.4}{\milli\meter}},
   user1={Inch},
   sort=in
 }
