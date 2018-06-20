@@ -23,6 +23,11 @@
   \renewcommand*{\glsgroupskip}{}
 }
 
+\let\DeclareUSUnit\DeclareSIUnit
+\let\US\SI
+\let\us\si
+\DeclareUSUnit\inch{in}
+
 \newglossaryentry{bit}{
   type=unit,
   name={\si{\bit}},
@@ -125,7 +130,7 @@
 }
 \newglossaryentry{inch}{
   type=unit,
-  name={''},
+  name={\us{\inch}},
   description={\SI{25.4}{\milli\meter}},
   user1={Inch},
   sort=in
@@ -269,7 +274,7 @@
 \newglossaryentry{crc32}{
   type=\acronymtype,
   name={CRC32},
-  description={\gls{crc} with a resulting 32 \glsuseri{bit} hash value}
+  description={\gls{crc} with a resulting \SI{32}{\bit} hash value}
 }
 \newglossaryentry{ksa}{
   type=\acronymtype,
@@ -651,7 +656,7 @@
 \newglossaryentry{lorawan}{
   type=\acronymtype,
   name={LoRaWAN},
-  description={long range \gls{wan}, operating in the \gls{ism} band and using 128 \glsuseri{bit} \gls{aes} for encryption as well as \gls{mic} for frame integrity}
+  description={long range \gls{wan}, operating in the \gls{ism} band and using \SI{128}{\bit} \gls{aes} for encryption as well as \gls{mic} for frame integrity}
 }
 \newglossaryentry{gps}{
   type=\acronymtype,
@@ -921,7 +926,7 @@
 }
 \newglossaryentry{x86_64}{
   name={x86-64},
-  description={the 64-\glsuseri{bit} version of the \gls{x86} instruction set}
+  description={the \SI{64}{\bit} version of the \gls{x86} instruction set}
 }
 \newglossaryentry{arduino}{
   name={Arduino},
@@ -929,7 +934,7 @@
 }
 \newglossaryentry{nema_17}{
   name={NEMA 17},
-  description={a stepper motor with a 1.7 x 1.7\gls{inch} faceplate as specified by \gls{nema}}
+  description={a stepper motor with a \SI{1.7 x 1.7}{\inch} faceplate as specified by \gls{nema}}
 }
 \newglossaryentry{docker}{
   name={Docker},
