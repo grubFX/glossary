@@ -15,7 +15,7 @@
   \renewcommand*{\glossaryentryfield}[4]{
     \small \glstarget{##1}{##2} & \glsentryuseri{##1} & ##3 \\ \tiny \\
   }
-
+  
   \renewcommand*{\glossarysubentryfield}[6]{
     \glossaryentryfield{##2}{##3}{##4}{##5}{##6}
   }
@@ -724,8 +724,8 @@
 \newglossaryentry{json}{
   type=\acronymtype,
   name={JSON},
-  first={Javascript object notation (JSON)},
-  description={Javascript object notation}
+  first={\gls{javascript} object notation (JSON)},
+  description={\gls{javascript} object notation}
 }
 \newglossaryentry{dc}{
   type=\acronymtype,
@@ -829,6 +829,24 @@
   name={NoSQL},
   first={No\gls{sql}},
   description={non-relational}
+}
+\newglossaryentry{cli}{
+  type=\acronymtype,
+  name={CLI},
+  first={command line interface (CLI)},
+  description={command line interface}
+}
+\newglossaryentry{js}{
+  type=\acronymtype,
+  name={JS},
+  first={\gls{javascript} (JS)},
+  description={\gls{javascript}}
+}
+\newglossaryentry{jit}{
+  type=\acronymtype,
+  name={JIT},
+  first={just in time (JIT)},
+  description={just in time}
 }
 
 % ------------------------------------------------------------------------------
@@ -1040,6 +1058,14 @@
   name={Kotlin},
   description={a statically typed programming language for modern multiplatform applications, 100\% interoperable with \gls{java} and \gls{android}~\cite{kotlin}}
 }
+\newglossaryentry{node}{
+  name={Node[.js]},
+  description={an open-source, cross-platform, asynchronous, event driven \gls{javascript} run-time environment that executes \gls{javascript} code server-side, designed to build scalable network applications~\cite{about_node_js}}
+}
+\newglossaryentry{javascript}{
+  name={JavaScript},
+  description={a lightweight interpreted or \gls{jit}-compiled programming language with first-class functions, most well-known as the scripting language for web pages~\cite{about_javascript}}
+}
 
 % ------------------------------------------------------------------------------
 % spacing
@@ -1113,4 +1139,8 @@
 \newglossaryentry{docker_compose}{
   name={\texttt{docker-compose}},
   description={a tool for defining and running multi-container \gls{docker} applications. One can use a \gls{yaml} file to configure an application’s services and can then, with a single command, create and start all the services from the configuration}
+}
+\newglossaryentry{npm}{
+  name={\texttt{npm}},
+  description={\gls{node} package manager}
 }
